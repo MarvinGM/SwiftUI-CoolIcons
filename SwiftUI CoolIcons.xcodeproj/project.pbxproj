@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		572795DF2678B1DB007C0941 /* SwiftUIFontIcon in Frameworks */ = {isa = PBXBuildFile; productRef = 572795DE2678B1DB007C0941 /* SwiftUIFontIcon */; };
 		573F79982678AE8200E3F041 /* SwiftUI_CoolIconsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573F79972678AE8200E3F041 /* SwiftUI_CoolIconsApp.swift */; };
 		573F799A2678AE8200E3F041 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573F79992678AE8200E3F041 /* ContentView.swift */; };
 		573F799C2678AE8300E3F041 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 573F799B2678AE8300E3F041 /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				572795DF2678B1DB007C0941 /* SwiftUIFontIcon in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = "SwiftUI CoolIcons";
+			packageProductDependencies = (
+				572795DE2678B1DB007C0941 /* SwiftUIFontIcon */,
+			);
 			productName = "SwiftUI CoolIcons";
 			productReference = 573F79942678AE8200E3F041 /* SwiftUI CoolIcons.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +117,9 @@
 				Base,
 			);
 			mainGroup = 573F798B2678AE8200E3F041;
+			packageReferences = (
+				572795DD2678B1DB007C0941 /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */,
+			);
 			productRefGroup = 573F79952678AE8200E3F041 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -326,6 +334,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		572795DD2678B1DB007C0941 /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/huybuidac/SwiftUIFontIcon";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		572795DE2678B1DB007C0941 /* SwiftUIFontIcon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 572795DD2678B1DB007C0941 /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */;
+			productName = SwiftUIFontIcon;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 573F798C2678AE8200E3F041 /* Project object */;
 }
